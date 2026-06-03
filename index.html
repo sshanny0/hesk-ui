@@ -1,0 +1,270 @@
+<!--home page-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link
+            href="css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link
+            href="css\bootstrap-icons-1.13.1\bootstrap-icons.css"
+            rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="css\fontawesome-free-7.2.0-web\css\all.min.css">
+
+        <!--Aos -->
+        <link rel="stylesheet"
+            href="aos-master/dist/aos.css" />
+
+        <link rel="shortcut icon" href="img/download (35).png"
+            type="image/x-icon">
+        <title>Help Desk Unit TI</title>
+    </head>
+    <body>
+        <!--header section -->
+        <header>
+            <!-- Navbar (اختياري) -->
+            <nav class="navbar main-nav fixed-top py-3 navbar-expand-lg">
+                <div
+                    class="container d-flex justify-content-between align-items-center">
+
+                    <!-- Logo -->
+                    <div class="d-flex align-items-center gap-2 brand-logo">
+                        <i class="fa-solid fa-headset"></i>
+                        <h4 class="fw-bold m-0 Logo">Help Desk Unit TI</h4>
+                    </div>
+
+                    <!-- Desktop Menu (visible on large screens only) -->
+                    <!-- <ul class="nav d-none d-lg-flex">
+                        <li class="nav-item"><a class="nav-link "
+                                href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link "
+                                href="Whyus.html">Why Us</a></li>
+                        <li class="nav-item"><a class="nav-link "
+                                href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link "
+                                href="team.html">Team</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="Pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="DentalSolutions.html">Solutions</a></li>
+                    </ul> -->
+
+                    <a href="https://helpdesk-ti.poltekssn.ac.id/index.php?a=add"
+                        class="btn px-4 d-none d-lg-block">Kirim Tiket</a>
+
+                    <!-- Burger Button (Mobile Only) -->
+                    <button class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+
+                </div>
+            </nav>
+
+            <!-- Offcanvas Mobile Menu -->
+            <div class="offcanvas offcanvas-end" id="mobileMenu"
+                style="background-color: #8a7aff;">
+
+                <div class="offcanvas-header">
+                    <div class="d-flex align-items-center gap-2 brand-logo">
+                        <i class="fa-solid fa-headset"></i>
+                        <h4 class="fw-bold m-0">Help Desk Unit TI</h4>
+                    </div>
+
+                    <button class="btn-close"
+                        data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <!-- <ul class="navbar-nav gap-2">
+
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="Whyus.html">Why
+                                Us</a></li>
+                        <li><a class="nav-link"
+                                href="service.html">Services</a></li>
+                        <li><a class="nav-link" href="team.html">Team</a></li>
+                        <li><a class="nav-link"
+                                href="Pricing.html">Pricing</a></li>
+                        <li><a class="nav-link"
+                                href="DentalSolutions.html">Solutions</a></li>
+
+                    </ul> -->
+
+                    <a class="btn w-100 mt-3" href="https://helpdesk-ti.poltekssn.ac.id/index.php?a=add">Kirim Tiket</a>
+
+                </div>
+
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero-modern">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- LEFT TEXT -->
+                    <div class="col-md-6">
+
+                        <h1 class="hero-title">
+                            Halo, ada yang bisa kami bantu?
+                        </h1>
+                    </div>
+
+                    <!-- RIGHT IMAGE -->
+                    <div class="col-md-6 position-relative">
+
+                        <!-- Doctor or Smile Image -->
+                        <img src="img/helpdesk-agent.png"
+                            class="hero-img" />
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Appointment Bar Section -->
+        <section class="container appointment-bar">
+
+            <div class="row g-4 align-items-end">
+
+                <div class="col-md-10">
+                    <input type="text" class="form-control form-field"
+                        placeholder="Cari Artikel">
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button class="btn make-btn w-100">
+                        Cari
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Features Section -->
+        <section class="container py-5 features-grid" data-aos="fade-up">
+
+            <div class="row g-4">
+
+                <div class="col-md-6 feature-col" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="feature-item">
+                        <i class="bi bi-plus-circle-fill feature-icon"></i>
+                        <h5>Kirim Tiket</h5>
+                        <p>Laporkan masalah atau ajukan permintaan bantuan baru ke departemen terkait</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 feature-col" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="feature-item">
+                        <i class="bi bi-card-list feature-icon"></i>
+                        <h5>Lihat tiket yang sudah ada</h5>
+                        <p>Tampilkan tiket yang pernah Anda kirimkan sebelumnya</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 feature-col " data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="feature-item">
+                        <i class="bi bi-folder2-open feature-icon"></i>
+                        <h5>Lihat Katalog Layanan</h5>
+                        <p>Tampilkan semua katalog layanan</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 feature-col " data-aos="fade-up"
+                    data-aos-delay="400">
+                    <div class="feature-item">
+                        <i class="bi bi-book feature-icon"></i>
+                        <h5>Frequently Asked Questions</h5>
+                        <p>Tampilkan semua pertanyaan yang sering diajukan</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- blog section-->
+        <section class="container my-5" data-aos="fade-up">
+            <h2 class="text-center fw-bold">
+                <a href="knowledgebase.php" class="blog-tag">Dasar Pengetahuan</a>
+            </h2>
+            <div class="tab-menu text-center mb-4">
+                <button class="tab-menu-link is-active" data-content="item-1">
+                    <span class="fw-bold">Artikel Teratas</span>
+                </button>
+                <button class="tab-menu-link" data-content="item-2">
+                    <span class="fw-bold">Artikel Terbaru</span>
+                </button>
+            </div>
+
+            <div class="tab-bar">
+                <div class="tab-bar-content is-active" id="item-1">
+                <div class="texts">
+                    <h2 class="title">The First Tab Title</h2>
+                    <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum provident quaerat error aliquid aspernatur repellat perspiciatis delectus.
+                    Ratione eius deserunt modi vel eaque animi provident reprehenderit.
+                    </p>
+                </div>
+                </div>
+                <div class="tab-bar-content" id="item-2">
+                <div class="texts">
+                    <h2 class="title">The Second Tab Title</h2>
+                    <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe at sunt veritatis dolorem placeat iusto praesentium maiores natus.
+                    Ratione atque odio magni quaerat rem odio hic velit delectus ipsam aliquam.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section py-5 mt-5">
+
+            <div class="container">
+
+                <hr class="my-4">
+
+                <!-- Bottom Bar -->
+                <div
+                    class="d-flex justify-content-between align-items-center flex-wrap">
+
+                    <div
+                        class="d-flex align-items-center gap-2 logo">
+                        <i class="fa-solid fa-headset"></i>
+                        <strong> Help Desk Unit TI</strong>
+                    </div>
+
+                    <small class="text-muted">
+                        Copyright © Politeknik Siber dan Sandi Negara
+                    </small>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- Bootstrap JS && custom js-->
+        <script src="aos-master/dist/aos.js"></script>
+        <script
+            src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
