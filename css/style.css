@@ -528,3 +528,184 @@ body {
     transform: translateY(0);
   }
 }
+
+/* BREADCRUMBS */
+.breadcrumbs__main {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 4px; /* Memberi jarak tipis antar panah */
+}
+
+.breadcrumbs__pointer {
+    font-family: Verdana, sans-serif;
+    font-size: 13px; /* Ukuran teks diperkecil */
+    font-weight: 600;
+    height: 40px; /* Tinggi diperkecil setengahnya dari contoh pertama */
+    position: relative;
+    background: #f3f5fa;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 30px; /* Menyesuaikan space di dalam panah */
+}
+
+/* Memastikan link/teks di dalamnya memenuhi area block dan warnanya pas */
+.breadcrumbs__pointer a, 
+.breadcrumbs__pointer .last {
+    color: #8093a7;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+/* Potongan Segitiga Kiri (Efek Lubang) */
+.breadcrumbs__pointer:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #fff; /* Ukuran border disesuaikan tinggi 40px */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+/* Potongan Segitiga Kanan (Efek Panah Keluar) */
+.breadcrumbs__pointer:after {
+    content: "";
+    position: absolute;
+    right: -14px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #f3f5fa;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    z-index: 1;
+}
+
+/* Khusus Item Pertama */
+.breadcrumbs__pointer--first {
+    padding-left: 20px; /* Karena tidak ada lubang di kiri, padding disamakan */
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.breadcrumbs__pointer--first:before {
+    border-left: none;
+}
+
+/* Khusus Item Terakhir */
+.breadcrumbs__pointer--last {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.breadcrumbs__pointer--last:after {
+    border-left: none;
+}
+
+/* Efek Hover & Halaman Aktif (Warna Pink Soft dari Kode Pertama) */
+.breadcrumbs__pointer--current,
+.breadcrumbs__pointer:hover {
+    background: #8a7aff;
+}
+
+.breadcrumbs__pointer--current a,
+.breadcrumbs__pointer--current .last,
+.breadcrumbs__pointer:hover a {
+    color: #fff;
+}
+
+.breadcrumbs__pointer--current:after,
+.breadcrumbs__pointer:hover:after {
+    border-left-color: #8a7aff;
+}
+
+/* NEW ADDED */
+.appointment-box {
+  position: relative;
+  border-radius: 22px 0 0 22px;
+  background: linear-gradient(135deg, #6b63ff, #4b3df2);
+  overflow: hidden;
+}
+
+/* decorative circles */
+.appointment-box::before,
+.appointment-box::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* circle top-left */
+.appointment-box::before {
+  top: -40px;
+  left: -20px;
+}
+
+/* circle bottom-right */
+.appointment-box::after {
+  bottom: -30px;
+  right: 30px;
+}
+
+/* ARTICLE LIST */
+.job-box {
+    background: #fff;
+    box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    border-radius: 10px;
+    padding: 10px 35px;
+}
+
+.job-box .img-holder {
+    height: 65px;
+    width: 65px;
+    background: linear-gradient(
+        to right,
+        rgba(78, 99, 215, 0.9) 0%,
+        #5a85dd 100%
+    );
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.job-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-content ul li {
+    font-weight: 600;
+    opacity: 0.75;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+}
+
+.job-content ul li i {
+    font-size: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .job-content ul li {
+        border-bottom: 0;
+        padding: 0;
+    }
+}
