@@ -1,0 +1,101 @@
+/* Container Utama */
+.helpdesk-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 475px; /* Menyesuaikan lebar kolom pencarian kamu */
+  margin: 20px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Wrapper Dropdown untuk Icon Kustom */
+.custom-dropdown-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+/* Dropdown Utama */
+.custom-select {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px; /* Rounded seperti kolom input cari kamu */
+  appearance: none; /* Menghilangkan arrow bawaan browser */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Efek Focus saat Dropdown Diklik */
+.custom-select:focus {
+  outline: none;
+  border-color: #8c7ae6;
+  box-shadow: 0 0 0 3px rgba(140, 122, 230, 0.2);
+}
+
+/* Icon Panah Kustom */
+.dropdown-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #8c7ae6; /* Warna ungu ikon penunjuk */
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+/* Animasi Rotasi Panah Saat Dropdown Aktif (Opsional dengan JS) */
+.custom-select:focus + .dropdown-icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Tombol Kirim (Send Button) */
+.btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7A67FF 0%, #9683FF 100%); /* Gradasi ungu khas tema kamu */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(122, 103, 255, 0.3);
+}
+
+/* Efek Hover Tombol */
+.btn-send:hover {
+  background: linear-gradient(135deg, #6652F0 0%, #8570FF 100%);
+  box-shadow: 0 6px 16px rgba(122, 103, 255, 0.45);
+  transform: translateY(-1px);
+}
+
+/* Efek Ketika Tombol Ditekan */
+.btn-send:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(122, 103, 255, 0.3);
+}
+
+/* Icon Pesawat Kertas */
+.send-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Efek Animasi Icon saat Hover */
+.btn-send:hover .send-icon {
+  transform: translate(2px, -2px) scale(1.05);
+}

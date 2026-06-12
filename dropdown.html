@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Helpdesk Form</title>
+        <link rel="stylesheet" href="css/dropdown.css">
+    </head>
+    <body>
+   <div class="helpdesk-form-container">
+      <div class="custom-dropdown-wrapper">
+        <select id="ticket-category" class="custom-select">
+          <option value="" disabled selected hidden>Pilih Kategori Kendala...</option>
+          <option value="internet">Petunjuk Teknis Internet</option>
+          <option value="vpn">Akses VPN Poltek SSN</option>
+          <option value="otp">Aktivasi OTP SSO LMS</option>
+          <option value="security">Tips Keamanan Siber</option>
+          <option value="other">Lainnya / Pengaduan Umum</option>
+        </select>
+        <span class="dropdown-icon">▼</span>
+      </div>
+
+      <button type="submit" class="btn-send">
+        <span>Kirim Tiket</span>
+        <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+    </body>
+</html>
